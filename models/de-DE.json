@@ -1,0 +1,323 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "meine jazznuts",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "NextConcertDateIntent",
+                    "slots": [],
+                    "samples": [
+                        "das nächste Konzert",
+                        "nächstes Konzert",
+                        "nächster Konzerttermin",
+                        "Gib mir den nächsten Konzerttermin",
+                        "sage mir den nächsten Konzerttermin",
+                        "Stehen die nächsten Konzerttermine schon fest",
+                        "Was sind die kommenden Konzerttermine",
+                        "Wann sind die nächsten Konzerte",
+                        "wann sind die nächsten Jazznuts Konzerte",
+                        "wann ist wieder Jazznuts Konzert",
+                        "wann finden die nächsten Konzerte statt",
+                        "wann findet das nächste Konzert statt",
+                        "wann ist das nächste Semsterkonzert",
+                        "was ist der Termin des kommenden Konzerts",
+                        "nenne die Termine des kommenden Jazznuts Konzerts",
+                        "wann ist das nächste Konzert der Jazznuts",
+                        "wann sind die Termine des nächsten Jazznuts Konzerts",
+                        "was sind die Termine der nächsten Jazznuts Konzerte",
+                        "wann ist das nächste Konzert",
+                        "Wann findet das nächste Jazznuts Konzert statt"
+                    ]
+                },
+                {
+                    "name": "NextConcertTitleIntent",
+                    "slots": [],
+                    "samples": [
+                        "Der Titel des nächsten Konzerts",
+                        "der nächste Konzerttitel",
+                        "Was ist das Thema des kommenden Jazznuts Konzerts",
+                        "Ist der Titel schon festgelegt",
+                        "Ist das Thema schon bekannt",
+                        "Steht das Thema schon fest",
+                        "wie ist das Thema dieses Jahr",
+                        "wie ist das Thema dieses Semester",
+                        "nenne mir den Titel des kommenden Konzertes der Jazznuts",
+                        "was ist das Thema der nächsten Jazznuts Konzerte",
+                        "Worum geht es im kommenden Konzert",
+                        "was ist der Titel des nächsten Konzerts",
+                        "wie lautet der Titel der nächsten Konzerte der Jazznuts",
+                        "was ist das Thema des nächsten Konzerts"
+                    ]
+                },
+                {
+                    "name": "NextConcertLocationIntent",
+                    "slots": [],
+                    "samples": [
+                        "Ort",
+                        "Location",
+                        "Ort des nächsten Konzerts",
+                        "Was ist der Ort des nächsten Konzertes",
+                        "Wo finden die nächsten Konzerte statt",
+                        "Wie komme ich zum nächsten Konzert der Jazznuts",
+                        "Wo findet das nächste Konzert statt",
+                        "Wo findet das Jazznuts Konzert statt"
+                    ]
+                },
+                {
+                    "name": "NextConcertPriceIntent",
+                    "slots": [],
+                    "samples": [
+                        "Eintrittskarten",
+                        "Kartenpreis",
+                        "Eintritt",
+                        "Kosten",
+                        "Preis",
+                        "Wieviel kostet es Eintritt",
+                        "Wie hoch ist der Eintritt",
+                        "Wie hoch sind die Kosten",
+                        "Wieviel kostet es",
+                        "Wie hoch ist der Eintritt für das Jazznuts Konzert",
+                        "Wieviel Eintritt kostet das nächste Konzert",
+                        "Wieviel Eintritt kostet es"
+                    ]
+                },
+                {
+                    "name": "ReservationInfoIntent",
+                    "slots": [],
+                    "samples": [
+                        "reservieren",
+                        "Reservierung",
+                        "Kartenreservierung",
+                        "Ist es möglich Karten zu reservieren",
+                        "Wie kann ich Karten reservieren",
+                        "Wie kann man Karten reservieren",
+                        "Ich würde gerne reservieren",
+                        "Wie kann ich reservieren",
+                        "Kann man Karten für das Konzert reservieren"
+                    ]
+                },
+                {
+                    "name": "PastSemestersTitleIntent",
+                    "slots": [
+                        {
+                            "name": "semester",
+                            "type": "Semester"
+                        },
+                        {
+                            "name": "year",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "das Thema {semester} {year}",
+                        "der Titel im {semester} {year}",
+                        "Titel im {semester} {year}",
+                        "Thema im {semester} {year}",
+                        "Was war das Thema {year} im {semester}",
+                        "Welches Konzertthema war im {semester} {year}",
+                        "Welches Thema war im {semester} {year}",
+                        "Wie war nochmal das Thema im {semester} {year}",
+                        "Nenne mir den Konzerttitel im {semester} {year}",
+                        "Was war das Thema im {semester} {year}",
+                        "Wie war der Konzerttitel im {semester} {year}",
+                        "Wie war der Titel {year} im {semester}",
+                        "Was war das Konzertthema im {semester} {year}",
+                        "Was war der Titel im {semester} {year}"
+                    ]
+                },
+                {
+                    "name": "BuyTicketsInfoIntent",
+                    "slots": [],
+                    "samples": [
+                        "Ich möchte Eintrittskarten kaufen",
+                        "Ich möchte Tickets kaufen",
+                        "Gibt es noch Tickets",
+                        "Gibt es noch Eintrittskarten",
+                        "Wie komme ich an Eintrittskarten",
+                        "Wo kann ich Tickets kaufen",
+                        "Wo kann ich ein Ticket erwerben",
+                        "Wo kann ich Eintrittskarten kaufen",
+                        "Wie komme ich an Tickets",
+                        "Wo kann man Tickets kaufen"
+                    ]
+                },
+                {
+                    "name": "ReducedPriceInfoIntent",
+                    "slots": [],
+                    "samples": [
+                        "Bis zu welchem Alter gilt die Ermäßigung",
+                        "Gibt es eine Ermäßiging für Kinder",
+                        "Gibt es eine Ermäßigung",
+                        "Für wen gibt es eine Ermäßigung",
+                        "Wann bekomme ich eine Ermäßigung",
+                        "Wie funktioniert die Ermäßigung",
+                        "Zahlt man als Student einen ermäßigten Preis",
+                        "Bekommen Studenten die Eintrittskarten billiger",
+                        "Kriegen Studenten die Karte billiger",
+                        "Wer bekommt einen ermäßtigen Preis",
+                        "Bekomme ich eine Ermäßigung",
+                        "Wer bekommt eine Ermäßigung"
+                    ]
+                },
+                {
+                    "name": "TimeUntilNextConcertIntent",
+                    "slots": [],
+                    "samples": [
+                        "wie lange es noch bis zum nächsten Konzert ist",
+                        "Zeit zum nächsten Konzert",
+                        "Countdown zum nächsten Konzert",
+                        "Countdown",
+                        "Timer",
+                        "Anzahl Tage bis zum nächsten Konzert",
+                        "Wie viele Tage sind es noch bis zum nächsten Jazznuts Konzert",
+                        "Wieviele Tage sind es noch bis zum nächsten Konzert",
+                        "Wieviel Zeit ist noch bis zum kommenden Konzert",
+                        "Wie lange ist die Zeit noch bis zum nächsten Konzert",
+                        "Zeit bis zum nächsten Konzert",
+                        "Timer zum kommenden Konzert",
+                        "Starte den Timer zum nächsten Konzert",
+                        "Konzerttimer",
+                        "Wie lange ist es noch bis zu den nächsten Konzerten",
+                        "Wie lange ist es noch zum kommenden Konzert",
+                        "Wie lange ist noch bis zum nächsten Konzert",
+                        "Wie lange dauert es noch bis zum nächsten Jazznuts Konzert",
+                        "Wie lange ist es noch zum nächsten Konzert"
+                    ]
+                },
+                {
+                    "name": "ListPastSemestersTitlesIntent",
+                    "slots": [],
+                    "samples": [
+                        "Themen vergangener Semester",
+                        "Themen aller Konzerte",
+                        "Titel der letzten Konzerte",
+                        "Was waren die Titel der letzten Konzerte",
+                        "Was waren die letzten Konzerttitel",
+                        "Was waren die Konzerttitel in den vergangenen Semestern",
+                        "Nenne mir die letzten Konzerttitel",
+                        "Was waren die Konzerttitel in den letzten Jahren",
+                        "Was waren die Themen in den letzten Semestern"
+                    ]
+                },
+                {
+                    "name": "LastConcertTitleIntent",
+                    "slots": [],
+                    "samples": [
+                        "dem Titel des letzten Konzerts",
+                        "Thema letztes Semester",
+                        "Thema des letzten Semesters",
+                        "Titel des letzten Konzerts",
+                        "Um was ging es im letzten Konzert",
+                        "Um was ging es im letzten Semester",
+                        "Welches Thema war im letzten Semester",
+                        "Was war der letzte Konzerttitel",
+                        "Wie war der Titel des letzten Konterts",
+                        "Was war der Titel des letzten Konzertes"
+                    ]
+                },
+                {
+                    "name": "LastConcertSongListIntent",
+                    "slots": [],
+                    "samples": [
+                        "Lieder letztes Semester",
+                        "Lieder des letzten Konzertes",
+                        "Welche Lieder wurden im vergangenen Konzert gesungen",
+                        "Was war die Songliste im letzten Konzert",
+                        "Was war die Songliste im letzten Semester",
+                        "Welcher Lieder wurden im Konzert gesungen",
+                        "Welche Lieder wurden gestern gesungen",
+                        "Welche Lieder wurden vorher gesungen",
+                        "Nenne mir die Liederliste des letzten Konzerts",
+                        "Wie war das Programm des letzten Konzertes",
+                        "Was für Lieder wurden im letzten Konzert gesungen",
+                        "Welche Lieder wurden im vergangenen Semester gesungen",
+                        "Was ist die Liederliste des letzten Jazznuts Konzertes",
+                        "Welche Lieder wurden im letzten Konzert gesungen"
+                    ]
+                },
+                {
+                    "name": "PastSemestersSongListIntent",
+                    "slots": [
+                        {
+                            "name": "semester",
+                            "type": "Semester"
+                        },
+                        {
+                            "name": "year",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "Liederliste im {semester} {year}",
+                        "Lieder im {semester} {year}",
+                        "Was war die Songliste im {semester} {year}",
+                        "Was war das Programm im {semester} {year}",
+                        "Welche Lieder wurden {year} im {semester} gesungen",
+                        "Was war die Liederliste im {semester} {year}",
+                        "Welche Lieder wurden im Konzert im {semester} {year} gesungen",
+                        "Welche Lieder wurden im {semester} {year} gesungen"
+                    ]
+                },
+                {
+                    "name": "AboutIntent",
+                    "slots": [],
+                    "samples": [
+                        "über den Chor",
+                        "Informationen über den Chor",
+                        "Informationen über die Jazznuts",
+                        "Jazznuts",
+                        "über die Jazznuts",
+                        "wer die Jazznuts sind",
+                        "Erzähle mir über die Jazznuts",
+                        "Wer oder was sind die Jazznuts",
+                        "Was sind Jazznuts",
+                        "Wer sind die Jazznuts"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "Semester",
+                    "values": [
+                        {
+                            "id": "winter",
+                            "name": {
+                                "value": "winter",
+                                "synonyms": [
+                                    "winter semester",
+                                    "wintersemester"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "summer",
+                            "name": {
+                                "value": "sommer",
+                                "synonyms": [
+                                    "sommer semester",
+                                    "sommersemester"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
