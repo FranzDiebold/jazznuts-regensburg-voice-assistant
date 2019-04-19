@@ -5,7 +5,7 @@
 [![Alexa skill: live](https://img.shields.io/badge/Alexa%20skill-live-2ccafb.svg)](https://www.amazon.com/)
 [![license: MIT](https://img.shields.io/badge/license-MIT-brightgreen.svg)](./LICENSE.md)
 
-*Meine Jazznuts* ist ein [Alexa](https://de.wikipedia.org/wiki/Amazon_Echo) Skill, der dich mit Informationen über kommende und vergangene Konzerte der [Jazznuts](http://www.jazznuts.de) versorgt. Die Jazznuts sind der A-cappella-Chor an der [Uni Regensburg](https://www.uni-regensburg.de).
+*Meine Jazznuts* ist ein [Alexa](https://de.wikipedia.org/wiki/Amazon_Echo) Skill, der dich über kommende und vergangene Konzerte der [Jazznuts](http://www.jazznuts.de) informiert. Die Jazznuts sind der A-cappella-Chor an der [Uni Regensburg](https://www.uni-regensburg.de).
 
 
 ### Example Conversation

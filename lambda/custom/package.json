@@ -1,7 +1,7 @@
 {
     "name": "meine-jazznuts-alexa-skill",
     "version": "0.9.0",
-    "description": "Meine Jazznuts versorgt dich mit Informationen über kommende und vergangene Konzerte der Jazznuts, dem A-cappella-Chor an der Uni Regensburg",
+    "description": "Meine Jazznuts - ein Alexa Skill, der dich über kommende und vergangene Konzerte der Jazznuts informiert",
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
