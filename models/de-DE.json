@@ -23,6 +23,7 @@
                     "name": "NextConcertDateIntent",
                     "slots": [],
                     "samples": [
+                        "dem nächsten Konzerttermin",
                         "das nächste Konzert",
                         "nächstes Konzert",
                         "nächster Konzerttermin",
@@ -49,6 +50,7 @@
                     "name": "NextConcertTitleIntent",
                     "slots": [],
                     "samples": [
+                        "dem Titel des nächsten Konzerts",
                         "Der Titel des nächsten Konzerts",
                         "der nächste Konzerttitel",
                         "Was ist das Thema des kommenden Jazznuts Konzerts",
@@ -219,6 +221,7 @@
                     "name": "LastConcertTitleIntent",
                     "slots": [],
                     "samples": [
+                        "dem Konzerttitel des letzten Konzerts",
                         "dem Titel des letzten Konzerts",
                         "Thema letztes Semester",
                         "Thema des letzten Semesters",

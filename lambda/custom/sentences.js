@@ -85,6 +85,12 @@ const sentences = {
             'Tschö!'
         ]);
     },
+    REPROMPT: () => {
+        return randomize([
+            'Kann ich dir noch weiterhelfen?',
+            'Hast du sonst noch Fragen zu den Jazznuts Konzerten?',
+        ]);
+    },
 };
 
 module.exports = {

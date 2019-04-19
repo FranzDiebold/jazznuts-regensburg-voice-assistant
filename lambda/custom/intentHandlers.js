@@ -19,7 +19,7 @@ const LaunchRequestHandler = {
         const speechText = sentences['WELCOME']();
         return handlerInput.responseBuilder
             .speak(speechText)
-            .reprompt(speechText)
+            .reprompt(sentences['REPROMPT']())
             .getResponse();
     }
 };
@@ -41,7 +41,7 @@ const NextConcertDateIntentHandler = {
 
         return handlerInput.responseBuilder
             .speak(speechText)
-            .reprompt(speechText)
+            .reprompt(sentences['REPROMPT']())
             .getResponse();
     }
 };
@@ -63,7 +63,7 @@ const NextConcertTitleIntentHandler = {
 
         return handlerInput.responseBuilder
             .speak(speechText)
-            .reprompt(speechText)
+            .reprompt(sentences['REPROMPT']())
             .getResponse();
     }
 };
@@ -85,7 +85,7 @@ const NextConcertLocationIntentHandler = {
 
         return handlerInput.responseBuilder
             .speak(speechText)
-            .reprompt(speechText)
+            .reprompt(sentences['REPROMPT']())
             .getResponse();
     }
 };
@@ -107,7 +107,7 @@ const NextConcertPriceIntentHandler = {
 
         return handlerInput.responseBuilder
             .speak(speechText)
-            .reprompt(speechText)
+            .reprompt(sentences['REPROMPT']())
             .getResponse();
     }
 };
@@ -130,7 +130,7 @@ const TimeUntilNextConcertIntentHandler = {
 
         return handlerInput.responseBuilder
             .speak(speechText)
-            .reprompt(speechText)
+            .reprompt(sentences['REPROMPT']())
             .getResponse();
     }
 };
@@ -164,7 +164,7 @@ const PastSemestersTitleIntentHandler = {
 
         return handlerInput.responseBuilder
             .speak(speechText)
-            .reprompt(speechText)
+            .reprompt(sentences['REPROMPT']())
             .getResponse();
     }
 };
@@ -198,7 +198,7 @@ const PastSemestersSongListIntentHandler = {
 
         return handlerInput.responseBuilder
             .speak(speechText)
-            .reprompt(speechText)
+            .reprompt(sentences['REPROMPT']())
             .getResponse();
     }
 };
@@ -215,7 +215,7 @@ const LastConcertTitleIntentHandler = {
 
         return handlerInput.responseBuilder
             .speak(speechText)
-            .reprompt(speechText)
+            .reprompt(sentences['REPROMPT']())
             .getResponse();
     }
 };
@@ -232,7 +232,7 @@ const LastConcertSongListIntentHandler = {
 
         return handlerInput.responseBuilder
             .speak(speechText)
-            .reprompt(speechText)
+            .reprompt(sentences['REPROMPT']())
             .getResponse();
     }
 };
@@ -249,7 +249,7 @@ const ListPastSemestersTitlesIntentHandler = {
 
         return handlerInput.responseBuilder
             .speak(speechText)
-            .reprompt(speechText)
+            .reprompt(sentences['REPROMPT']())
             .getResponse();
     }
 };
@@ -266,7 +266,7 @@ const ReservationInfoIntentHandler = {
 
         return handlerInput.responseBuilder
             .speak(speechText)
-            .reprompt(speechText)
+            .reprompt(sentences['REPROMPT']())
             .getResponse();
     }
 };
@@ -283,7 +283,7 @@ const BuyTicketsInfoIntentHandler = {
 
         return handlerInput.responseBuilder
             .speak(speechText)
-            .reprompt(speechText)
+            .reprompt(sentences['REPROMPT']())
             .getResponse();
     }
 };
@@ -300,7 +300,7 @@ const ReducedPriceInfoIntentHandler = {
 
         return handlerInput.responseBuilder
             .speak(speechText)
-            .reprompt(speechText)
+            .reprompt(sentences['REPROMPT']())
             .getResponse();
     }
 };
@@ -317,7 +317,7 @@ const AboutIntentHandler = {
 
         return handlerInput.responseBuilder
             .speak(speechText)
-            .reprompt(speechText)
+            .reprompt(sentences['REPROMPT']())
             .getResponse();
     }
 };
@@ -333,7 +333,7 @@ const HelpIntentHandler = {
 
         return handlerInput.responseBuilder
             .speak(speechText)
-            .reprompt(speechText)
+            .reprompt(sentences['REPROMPT']())
             .getResponse();
     }
 };
