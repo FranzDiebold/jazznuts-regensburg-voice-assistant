@@ -1,11 +1,11 @@
-<img src="./images/meine-jazznuts-alexa-skill-preview-image.png" width="135px" alt="Meine Jazznuts Alexa Skill preview image" />
+<img src="./images/meine-jazznuts-alexa-skill-preview-image.png" width="135px" alt="Meine Jazznuts Alexa skill preview image" />
 
-# Meine Jazznuts Alexa Skill
+# "Meine Jazznuts" Alexa skill
 
 [![Alexa skill: live](https://img.shields.io/badge/Alexa%20skill-live-2ccafb.svg)](https://www.amazon.com/)
 [![license: MIT](https://img.shields.io/badge/license-MIT-brightgreen.svg)](./LICENSE.md)
 
-*Meine Jazznuts* ist ein [Alexa](https://de.wikipedia.org/wiki/Amazon_Echo) Skill, der dich über kommende und vergangene Konzerte der [Jazznuts](http://www.jazznuts.de) informiert. Die Jazznuts sind der A-cappella-Chor an der [Uni Regensburg](https://www.uni-regensburg.de).
+*Meine Jazznuts* is a German-speaking [Alexa](https://en.wikipedia.org/wiki/Amazon_Echo) skill, which informs you about upcoming and past concerts of the [Jazznuts](http://www.jazznuts.de). The Jazznuts is an a cappella choir at the [University of Regensburg](https://www.uni-regensburg.de).
 
 
 ### Example Conversation
