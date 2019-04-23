@@ -1,5 +1,4 @@
 const {
-    listToText,
     getSemesterText,
     getNextConcert,
     getConcertBySemesterAndYear,
