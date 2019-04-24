@@ -37,6 +37,7 @@ const NextConcertDateIntentHandler = {
         } else {
             speechText = sentences['NEXT_CONCERT_DATE'](nextConcert);
         }
+        speechText += sentences['REPROMPT']();
 
         return handlerInput.responseBuilder
             .speak(speechText)
@@ -59,6 +60,7 @@ const NextConcertTitleIntentHandler = {
         } else {
             speechText = sentences['NEXT_CONCERT_TITLE'](nextConcert);
         }
+        speechText += sentences['REPROMPT']();
 
         return handlerInput.responseBuilder
             .speak(speechText)
@@ -81,6 +83,7 @@ const NextConcertLocationIntentHandler = {
         } else {
             speechText = sentences['NEXT_CONCERT_LOCATION'](nextConcert);
         }
+        speechText += sentences['REPROMPT']();
 
         return handlerInput.responseBuilder
             .speak(speechText)
@@ -103,6 +106,7 @@ const NextConcertPriceIntentHandler = {
         } else {
             speechText = sentences['NEXT_CONCERT_PRICE'](nextConcert);
         }
+        speechText += sentences['REPROMPT']();
 
         return handlerInput.responseBuilder
             .speak(speechText)
@@ -126,6 +130,7 @@ const TimeUntilNextConcertIntentHandler = {
             const timeUntilNextConcert = timeDifferenceToText(nextConcert.dates[0], nextConcert.time);
             speechText = sentences['TIME_UNTIL_NEXT_CONCERT'](timeUntilNextConcert);
         }
+        speechText += sentences['REPROMPT']();
 
         return handlerInput.responseBuilder
             .speak(speechText)
@@ -160,6 +165,7 @@ const PastSemestersTitleIntentHandler = {
         } else {
             speechText = sentences['PAST_SEMESTER_TITLE'](concert);
         }
+        speechText += sentences['REPROMPT']();
 
         return handlerInput.responseBuilder
             .speak(speechText)
@@ -194,6 +200,7 @@ const PastSemestersSongListIntentHandler = {
         } else {
             speechText = sentences['PAST_SEMESTER_SONG_LIST'](concert);
         }
+        speechText += sentences['REPROMPT']();
 
         return handlerInput.responseBuilder
             .speak(speechText)
@@ -210,7 +217,8 @@ const LastConcertTitleIntentHandler = {
 
     handle(handlerInput) {
         const lastConcert = getLastConcert();
-        const speechText = sentences['LAST_CONCERT_TITLE'](lastConcert);
+        let speechText = sentences['LAST_CONCERT_TITLE'](lastConcert);
+        speechText += sentences['REPROMPT']();
 
         return handlerInput.responseBuilder
             .speak(speechText)
@@ -227,7 +235,8 @@ const LastConcertSongListIntentHandler = {
 
     handle(handlerInput) {
         const lastConcert = getLastConcert();
-        const speechText = sentences['LAST_CONCERT_SONG_LIST'](lastConcert);
+        let speechText = sentences['LAST_CONCERT_SONG_LIST'](lastConcert);
+        speechText += sentences['REPROMPT']();
 
         return handlerInput.responseBuilder
             .speak(speechText)
@@ -244,7 +253,8 @@ const ListPastSemestersTitlesIntentHandler = {
 
     handle(handlerInput) {
         const concerts = getPastConcerts();
-        const speechText = sentences['LIST_PAST_SEMESTERS_TITLES'](concerts);
+        let speechText = sentences['LIST_PAST_SEMESTERS_TITLES'](concerts);
+        speechText += sentences['REPROMPT']();
 
         return handlerInput.responseBuilder
             .speak(speechText)
@@ -260,8 +270,8 @@ const ReservationInfoIntentHandler = {
     },
 
     handle(handlerInput) {
-        const nextConcert = getNextConcert();
-        const speechText = sentences['RESERVATION_INFO']();
+        let speechText = sentences['RESERVATION_INFO']();
+        speechText += sentences['REPROMPT']();
 
         return handlerInput.responseBuilder
             .speak(speechText)
@@ -277,8 +287,8 @@ const BuyTicketsInfoIntentHandler = {
     },
 
     handle(handlerInput) {
-        const nextConcert = getNextConcert();
-        const speechText = sentences['BUY_TICKETS_INFO']();
+        let speechText = sentences['BUY_TICKETS_INFO']();
+        speechText += sentences['REPROMPT']();
 
         return handlerInput.responseBuilder
             .speak(speechText)
@@ -294,8 +304,8 @@ const ReducedPriceInfoIntentHandler = {
     },
 
     handle(handlerInput) {
-        const nextConcert = getNextConcert();
-        const speechText = sentences['REDUCED_PRICE_INFO']();
+        let speechText = sentences['REDUCED_PRICE_INFO']();
+        speechText += sentences['REPROMPT']();
 
         return handlerInput.responseBuilder
             .speak(speechText)
@@ -311,8 +321,8 @@ const AboutIntentHandler = {
     },
 
     handle(handlerInput) {
-        const nextConcert = getNextConcert();
-        const speechText = sentences['ABOUT']();
+        let speechText = sentences['ABOUT']();
+        speechText += sentences['REPROMPT']();
 
         return handlerInput.responseBuilder
             .speak(speechText)

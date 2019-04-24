@@ -5,15 +5,31 @@
             "intents": [
                 {
                     "name": "AMAZON.CancelIntent",
-                    "samples": []
+                    "samples": [
+                        "garnichts",
+                        "nein danke",
+                        "nichts",
+                        "schließen",
+                        "nein"
+                    ]
                 },
                 {
                     "name": "AMAZON.HelpIntent",
-                    "samples": []
+                    "samples": [
+                        "ja bitte",
+                        "was kann ich machen",
+                        "ich benötige hilfe",
+                        "hilfe",
+                        "ja"
+                    ]
                 },
                 {
                     "name": "AMAZON.StopIntent",
-                    "samples": []
+                    "samples": [
+                        "aufhören",
+                        "halt",
+                        "stop"
+                    ]
                 },
                 {
                     "name": "AMAZON.NavigateHomeIntent",

@@ -78,7 +78,7 @@ const sentences = {
             'Aktuell sind etwa 110 Sängerinnen und Sänger bei den Jazznuts aktiv – überwiegend Studierende der Uni und <say-as interpret-as="characters">OTH</say-as> Regensburg, aber auch Doktoranden, Bedienstete, Externe und Ehemalige.',
         ].join(' '),
     HELP: () =>
-        'Du kannst mich über die nächsten oder vergangene Konzerte der Jazznuts befragen.',
+        'Du kannst mich über die nächsten oder vergangene Konzerte der Jazznuts befragen. Was möchtest du wissen?',
     CANCEL_STOP: () => {
         return randomize([
             'Ok. Bis bald!',
@@ -86,10 +86,11 @@ const sentences = {
         ]);
     },
     REPROMPT: () => {
-        return randomize([
+        const repromptText = randomize([
             'Kann ich dir noch weiterhelfen?',
             'Hast du sonst noch Fragen zu den Jazznuts Konzerten?',
         ]);
+        return `<break time="1200ms"/> ${repromptText}`;
     },
 };
 
