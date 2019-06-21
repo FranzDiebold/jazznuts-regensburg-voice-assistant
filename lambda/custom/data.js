@@ -11,11 +11,11 @@ const data = {
             prices: {
                 advance: {
                     reduced: 4.0,
-                    regular: 7.0,
+                    regular: 8.0,
                 },
                 boxOffice: {
                     reduced: 5.0,
-                    regular: 8.0,
+                    regular: 9.0,
                 },
             },
             title: 'Jazznuts - Simsalasing',
