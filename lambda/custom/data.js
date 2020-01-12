@@ -2,6 +2,28 @@ const data = {
     concerts: [
         {
             year: 2019,
+            semester: 'winter',
+            dates: [
+                '2020-01-16',
+                '2020-01-17',
+            ],
+            time: '20:00',
+            prices: {
+                advance: {
+                    reduced: 4.0,
+                    regular: 8.0,
+                },
+                boxOffice: {
+                    reduced: 5.0,
+                    regular: 9.0,
+                },
+            },
+            title: 'Jazznuts - Go West',
+            location: 'Audimax Regensburg',
+            songs: [],
+        },
+        {
+            year: 2019,
             semester: 'summer',
             dates: [
                 '2019-07-18',
@@ -20,7 +42,21 @@ const data = {
             },
             title: 'Jazznuts - Simsalasing',
             location: 'Audimax Regensburg',
-            songs: [],
+            songs: [
+                'Adventure of a lifetime',
+                'Fix you',
+                'A fire inside - Prelude 12/21',
+                'The hanging tree',
+                'Set fire to the rain',
+                'The rains of castamere',
+                'When you wish upon a star',
+                'Superkalifragilistic',
+                'I see fire',
+                'Ich seh dich',
+                'Ding-Dong! The witch is dead',
+                'Baba yetu',
+                'Take on me',
+            ],
         },
         {
             year: 2018,
