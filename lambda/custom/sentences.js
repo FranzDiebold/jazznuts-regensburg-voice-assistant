@@ -13,31 +13,44 @@ const sentences = {
     },
     NEXT_CONCERT_DATE: (nextConcert) => {
         const dates = getConcertDaysText(nextConcert);
+        const title = nextConcert.title
+                        ? `Der Titel ist <break strength="medium"/> <prosody volume="loud">${nextConcert.title}</prosody>.`
+                        : 'Der Titel steht leider noch nicht fest.';
         return [
             `Unsere nächsten Konzerte finden am ${dates} jeweils um <say-as interpret-as="time">${nextConcert.time}</say-as> im ${nextConcert.location} statt.`,
-            `Der Titel ist <break strength="medium"/> <prosody volume="loud">${nextConcert.title}</prosody>.`,
+            title,
         ].join(' ');
     },
     NEXT_CONCERT_TITLE: (nextConcert) => {
         const dates = getConcertDaysText(nextConcert);
+        const title = nextConcert.title
+                        ? `Der Titel unserer nächsten Konzerte ist <break strength="medium"/> <prosody volume="loud">${nextConcert.title}</prosody>.`
+                        : 'Der Titel unserer nächsten Konzerte steht leider noch nicht fest. Wir wissen allerdings schon wann sie stattfinden.';
         return [
-            `Der Titel unserer nächsten Konzerte ist <break strength="medium"/> <prosody volume="loud">${nextConcert.title}</prosody>.`,
+            title,
             `Sie finden am ${dates} jeweils um <say-as interpret-as="time">${nextConcert.time}</say-as> im ${nextConcert.location} statt.`,
         ].join(' ');
     },
     NEXT_CONCERT_LOCATION: (nextConcert) => {
         const dates = getConcertDaysText(nextConcert);
+        const title = nextConcert.title
+                        ? `Der Titel ist <break strength="medium"/> <prosody volume="loud">${nextConcert.title}</prosody>.`
+                        : 'Der Titel steht leider noch nicht fest.';
         return [
             `Unsere nächsten Konzerte finden im ${nextConcert.location} statt, und zwar am ${dates} jeweils um <say-as interpret-as="time">${nextConcert.time}</say-as>.`,
-            `Der Titel ist <break strength="medium"/> <prosody volume="loud">${nextConcert.title}</prosody>.`,
+            title,
         ].join(' ');
     },
     NEXT_CONCERT_PRICE: (nextConcert) => {
         const prices = nextConcert.prices;
-        return [
-            `Die Preise im Vorverkauf sind <say-as interpret-as="unit">${prices.advance.reduced}€</say-as> ermäßigt und <say-as interpret-as="unit">${prices.advance.regular}€</say-as> regulär.`,
-            `An der Abendkasse sind die Preise <say-as interpret-as="unit">${prices.boxOffice.reduced}€</say-as> ermäßigt und <say-as interpret-as="unit">${prices.boxOffice.regular}€</say-as> regulär.`,
-        ].join(' ');
+        if (prices) {
+            return [
+                `Die Preise im Vorverkauf sind <say-as interpret-as="unit">${prices.advance.reduced}€</say-as> ermäßigt und <say-as interpret-as="unit">${prices.advance.regular}€</say-as> regulär.`,
+                `An der Abendkasse sind die Preise <say-as interpret-as="unit">${prices.boxOffice.reduced}€</say-as> ermäßigt und <say-as interpret-as="unit">${prices.boxOffice.regular}€</say-as> regulär.`,
+            ].join(' ');
+        } else {
+            return 'Die Preise für die nächsten Konzerte stehen leider noch nicht fest.';
+        }
     },
     NO_INFORMATION_FOR_NEXT_CONCERT_YET: () =>
         'Leider stehen derzeit weder die Termine noch der Titel der nächsten Konzerte fest. Frage mich einfach in ein paar Tagen noch einmal, dann weiß ich wahrscheinlich mehr.',
@@ -75,7 +88,7 @@ const sentences = {
         [
             'Die Jazznuts sind der A-cappella-Chor an der Uni Regensburg.',
             'Wir lieben es, moderne Pop- und Rocksongs zu singen. Den Chor gibt es seit 1995. Jedes Semester veranstalten wir eigene Konzerte und treten bei Festen am Regensburger Campus auf.',
-            'Aktuell sind etwa 110 Sängerinnen und Sänger bei den Jazznuts aktiv – überwiegend Studierende der Uni und <say-as interpret-as="characters">OTH</say-as> Regensburg, aber auch Doktoranden, Bedienstete, Externe und Ehemalige.',
+            'Aktuell sind etwa 120 Sängerinnen und Sänger bei den Jazznuts aktiv – überwiegend Studierende der Uni und <say-as interpret-as="characters">OTH</say-as> Regensburg, aber auch Doktoranden, Bedienstete, Externe und Ehemalige.',
         ].join(' '),
     HELP: () =>
         'Du kannst mich über die nächsten oder vergangene Konzerte der Jazznuts befragen. Was möchtest du wissen?',
