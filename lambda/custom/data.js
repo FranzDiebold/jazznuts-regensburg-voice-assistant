@@ -1,6 +1,19 @@
 const data = {
     concerts: [
         {
+            year: 2020,
+            semester: 'summer',
+            dates: [
+                '2020-07-09',
+                '2020-07-10',
+            ],
+            time: '20:00',
+            prices: undefined,
+            title: undefined,
+            location: 'Audimax Regensburg',
+            songs: [],
+        },
+        {
             year: 2019,
             semester: 'winter',
             dates: [
