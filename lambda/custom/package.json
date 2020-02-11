@@ -9,7 +9,7 @@
     "author": "Franz Diebold",
     "license": "MIT",
     "dependencies": {
-        "ask-sdk-core": "^2.0.7",
-        "ask-sdk-model": "^1.4.1"
+        "ask-sdk-core": "^2.7.0",
+        "ask-sdk-model": "^1.25.1"
     }
 }
