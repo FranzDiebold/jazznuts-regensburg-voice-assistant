@@ -2,7 +2,7 @@
 
 # "Meine Jazznuts" Alexa skill
 
-[![Alexa skill: live](https://img.shields.io/badge/Alexa%20skill-live-2ccafb.svg)](https://www.amazon.de/Franz-Diebold-Meine-Jazznuts/dp/B07R52QPSB)
+[![Alexa skill: live](https://img.shields.io/badge/Alexa%20skill-live-2ccafb.svg)](https://meine-jazznuts.diebold.io)
 [![license: MIT](https://img.shields.io/badge/license-MIT-brightgreen.svg)](./LICENSE.md)
 
 *Meine Jazznuts* is a German-speaking [Alexa](https://en.wikipedia.org/wiki/Amazon_Echo) skill, which informs you about upcoming and past concerts of the [Jazznuts](http://www.jazznuts.de). The Jazznuts is an a cappella choir at the [University of Regensburg](https://www.uni-regensburg.de).
