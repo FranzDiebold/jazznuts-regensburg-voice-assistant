@@ -9,7 +9,7 @@ const data = {
             ],
             time: '20:00',
             prices: undefined,
-            title: undefined,
+            title: 'Jazznuts - The Show must go on',
             location: 'Audimax Regensburg',
             songs: [],
         },
