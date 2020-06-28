@@ -2,14 +2,12 @@ const data = {
     concerts: [
         {
             year: 2020,
-            semester: 'summer',
-            dates: [
-                '2020-07-09',
-                '2020-07-10',
-            ],
+            semester: 'winter',
+            dates: [],
             time: '20:00',
             prices: undefined,
             title: 'Jazznuts - The Show must go on',
+            imageUrl: undefined,
             location: 'Audimax Regensburg',
             songs: [],
         },
@@ -32,6 +30,7 @@ const data = {
                 },
             },
             title: 'Jazznuts - Go West',
+            imageUrl: 'https://storage.googleapis.com/meine-jazznuts-images-62874/posters/2019_SS_Go_West.jpg',
             location: 'Audimax Regensburg',
             songs: [
                 'Boondocks',
@@ -69,6 +68,7 @@ const data = {
                 },
             },
             title: 'Jazznuts - Simsalasing',
+            imageUrl: 'https://storage.googleapis.com/meine-jazznuts-images-62874/posters/2019_SS_Simsalasing.jpg',
             location: 'Audimax Regensburg',
             songs: [
                 'Adventure of a lifetime',
@@ -105,6 +105,7 @@ const data = {
                 },
             },
             title: 'Jazznuts About time',
+            imageUrl: 'https://storage.googleapis.com/meine-jazznuts-images-62874/posters/2018_WS_About_Time.jpg',
             location: 'Audimax Regensburg',
             songs: [
                 'Dancing Queen',
@@ -133,6 +134,7 @@ const data = {
             ],
             time: '20:00',
             title: 'Jazznuts - Rockappella',
+            imageUrl: 'https://storage.googleapis.com/meine-jazznuts-images-62874/posters/2018_SS_Rockappella.jpg',
             location: 'Audimax Regensburg',
             songs: [
                 'Alkohol',
@@ -160,6 +162,7 @@ const data = {
             ],
             time: '20:00',
             title: 'Jazznuts im Wunderland',
+            imageUrl: 'https://storage.googleapis.com/meine-jazznuts-images-62874/posters/2017_WS_Jazznuts_im_Wunderland.jpg',
             location: 'Audimax Regensburg',
             songs: [
                 'Let me entertain you',
@@ -187,6 +190,7 @@ const data = {
             ],
             time: '20:00',
             title: 'Jazznuts - Sing\'n\'Swim',
+            imageUrl: 'https://storage.googleapis.com/meine-jazznuts-images-62874/posters/2017_SS_Sing_n_Swim.jpg',
             location: 'Audimax Regensburg',
             songs: [
                 'Another Day of Sun',
@@ -215,6 +219,7 @@ const data = {
             ],
             time: '20:00',
             title: 'Jazznuts outta space',
+            imageUrl: 'https://storage.googleapis.com/meine-jazznuts-images-62874/posters/2016_WS_Jazznuts_Outta_Space.jpg',
             location: 'Audimax Regensburg',
             songs: [
                 'Earth Song',
@@ -242,6 +247,7 @@ const data = {
             ],
             time: '20:00',
             title: 'Dschungelfieber',
+            imageUrl: 'https://storage.googleapis.com/meine-jazznuts-images-62874/posters/2016_SS_Dschungelfieber.jpg',
             location: 'Audimax Regensburg',
             songs: [
                 'Bohemian Rhapsody',
@@ -272,6 +278,7 @@ const data = {
             ],
             time: '20:00',
             title: 'Jazznuts - Das Grusical',
+            imageUrl: 'https://storage.googleapis.com/meine-jazznuts-images-62874/posters/2015_WS_Das_Grusical.jpg',
             location: 'H24 Uni Regensburg',
             songs: [
                 'Thriller',
@@ -293,6 +300,30 @@ const data = {
             ],
         },
     ],
+    general: {
+        images: {
+            logo: 'https://stwno.de/images/Kultur/gallery/reg-jazznuts/4-jazznuts-logo.jpg',
+            choir: 'https://storage.googleapis.com/meine-jazznuts-images-62874/Jazznuts_choir.jpg',
+        },
+        online: {
+            website: {
+                label: 'www.jazznuts.de',
+                url: 'https://www.jazznuts.de',
+            },
+            reservation: {
+                label: 'Jetzt online reservieren',
+                url: 'https://www.jazznuts.de',
+            },
+            instagram: {
+                label: '@jazznuts.regensburg',
+                url: 'https://www.instagram.com/jazznuts.regensburg',
+            },
+            facebook: {
+                label: '@jazznuts',
+                url: 'https://www.facebook.com/jazznuts',
+            },
+        },
+    },
 };
 
 module.exports = {

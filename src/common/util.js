@@ -11,6 +11,12 @@ function listToText(list, conjunction='und') {
     }
 }
 
+function listToVisual(list, itemSeparator='  \n') {
+    return list
+        .filter(item => !!item)
+        .join(itemSeparator);
+}
+
 function getSemesterText(semesterValue) {
     return semesterValue === 'summer' ? 'Sommersemester' : 'Wintersemester';
 }
@@ -121,6 +127,7 @@ function timeDifferenceToText(dateString, timeString) {
 
 module.exports = {
     listToText,
+    listToVisual,
     randomize,
     getSemesterText,
     getNextConcert,
