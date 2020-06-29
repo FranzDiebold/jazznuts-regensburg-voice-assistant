@@ -1,10 +1,12 @@
 const {
     listToText,
+    listToVisual,
     randomize,
     getConcertDaysText,
+    getConcertDaysVisual,
 } = require('./util');
 
-const sentences = {
+const speechContents = {
     WELCOME: () => {
         return randomize([
             'Willkommen bei den Jazznuts. Du kannst mich zum Beispiel über die nächsten Konzerte befragen.',
@@ -107,6 +109,74 @@ const sentences = {
     },
 };
 
+const visualContents = {
+    CONCERT: (concert) => {
+        const textList = [
+            `${concert.semesterText} ${concert.year}`,
+            `Termine: ${getConcertDaysVisual(concert)}`,
+            `Ort: ${concert.location}`,
+        ];
+        return {
+            title: concert.title,
+            imageUrl: concert.imageUrl,
+            text: textList.join('  \n'),
+        };
+    },
+    CONCERT_SONG_LIST: (concert) => {
+        if (!concert.songs || concert.songs.length === 0) {
+            return null;
+        }
+        const songList = listToVisual(concert.songs);
+        return {
+            title: concert.title,
+            imageUrl: concert.imageUrl,
+            text: `Liederliste im ${concert.semesterText} ${concert.year}:  \n${songList}`,
+        };
+    },
+    LIST_PAST_SEMESTERS_TITLES: (concerts, generalData) => {
+        return {
+            title: 'Konzerttitel der vergangenen Semester:',
+            imageUrl: generalData.images.choir,
+            text: listToVisual(concerts.map(concert => `${concert.semesterText} ${concert.year}: ${concert.title}`)),
+        };
+    },
+    RESERVATION_INFO: (generalData, concert) => {
+        return {
+            title: 'Jazznuts Online Reservierung',
+            imageUrl: concert ? concert.imageUrl : undefined,
+            text: 'Reservierte Karten müssen bis spätestens 19:30 Uhr am Konzerttag abgeholt werden.',
+            buttonText: generalData.online.reservation.label,
+            buttonUrl: generalData.online.reservation.url,
+        };
+    },
+    ABOUT: (generalData) => {
+        return {
+            title: 'Jazznuts',
+            imageUrl: generalData.images.choir,
+            text: 'Der A-cappella-Chor an der Uni Regensburg',
+            buttonText: generalData.online.website.label,
+            buttonUrl: generalData.online.website.url,
+        };
+    },
+    HELP: (generalData) => {
+        const exampleQuestions = [
+            'Wann sind die nächsten Konzerte?',
+            'Was war der Titel des letzten Konzerts?',
+            'Was war das Thema im Wintersemester 2017?',
+            'Welche Lieder wurden im Sommer 2019 gesungen?',
+            'Wie lange ist es noch bis zum nächsten Konzert?',
+            'Wo kann ich Karten kaufen?',
+            'Kann ich Karten reservieren?',
+        ];
+        return {
+            title: 'Was kannst du mich fragen?',
+            imageUrl: generalData.images.logo,
+            text: listToVisual(exampleQuestions),
+        };
+    },
+};
+
 module.exports = {
-    sentences,
+    speechContents,
+    visualContents,
 };

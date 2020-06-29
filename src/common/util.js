@@ -11,6 +11,12 @@ function listToText(list, conjunction='und') {
     }
 }
 
+function listToVisual(list, itemSeparator='  \n') {
+    return list
+        .filter(item => !!item)
+        .join(itemSeparator);
+}
+
 function getSemesterText(semesterValue) {
     return semesterValue === 'summer' ? 'Sommersemester' : 'Wintersemester';
 }
@@ -100,6 +106,13 @@ function getConcertDaysText(concert) {
         .map(date => `${getWeekdayText(date)}, den ${date.getDate()}. ${getMonthText(date)}`), 'und am');
 }
 
+function getConcertDaysVisual(concert) {
+    return concert.dates
+        .map(dateString => new Date(dateString))
+        .map(date => `${getWeekdayText(date)}, ${date.getDate()}. ${getMonthText(date)}`)
+        .join(', ');
+}
+
 function timeDifferenceToText(dateString, timeString) {
     const now = new Date();
     const date = new Date(`${dateString}T${timeString}:00+02:00`);
@@ -121,6 +134,7 @@ function timeDifferenceToText(dateString, timeString) {
 
 module.exports = {
     listToText,
+    listToVisual,
     randomize,
     getSemesterText,
     getNextConcert,
@@ -129,5 +143,6 @@ module.exports = {
     getLastConcert,
     getYear,
     getConcertDaysText,
+    getConcertDaysVisual,
     timeDifferenceToText,
 };

@@ -1,7 +1,7 @@
 {
     "interactionModel": {
         "languageModel": {
-            "invocationName": "meine jazznuts",
+            "invocationName": "jazznuts regensburg",
             "intents": [
                 {
                     "name": "AMAZON.CancelIntent",
