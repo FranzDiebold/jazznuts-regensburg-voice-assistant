@@ -3,6 +3,7 @@ const {
     listToVisual,
     randomize,
     getConcertDaysText,
+    getConcertDaysVisual,
 } = require('./util');
 
 const speechContents = {
@@ -112,7 +113,7 @@ const visualContents = {
     CONCERT: (concert) => {
         const textList = [
             `${concert.semesterText} ${concert.year}`,
-            `Termine: ${getConcertDaysText(concert)}`, // TODO
+            `Termine: ${getConcertDaysVisual(concert)}`,
             `Ort: ${concert.location}`,
         ];
         return {
