@@ -110,7 +110,7 @@ function getConcertDaysVisual(concert) {
     return concert.dates
         .map(dateString => new Date(dateString))
         .map(date => `${getWeekdayText(date)}, ${date.getDate()}. ${getMonthText(date)}`)
-        .join(', ');
+        .join(' und ');
 }
 
 function timeDifferenceToText(dateString, timeString) {
