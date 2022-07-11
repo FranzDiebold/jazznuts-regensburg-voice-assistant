@@ -1,15 +1,15 @@
 {
-    "name": "jazznuts-regensburg-alexa-skill",
-    "version": "0.9.0",
-    "description": "Jazznuts Regensburg - ein Alexa Skill, der dich über kommende und vergangene Konzerte der Jazznuts informiert.",
-    "main": "index.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "author": "Franz Diebold",
-    "license": "MIT",
-    "dependencies": {
-        "ask-sdk-core": "^2.8.0",
-        "ask-sdk-model": "^1.28.0"
-    }
+  "name": "jazznuts-regensburg-alexa-skill",
+  "version": "0.9.0",
+  "description": "Jazznuts Regensburg - ein Alexa Skill, der dich über kommende und vergangene Konzerte der Jazznuts informiert.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Franz Diebold",
+  "license": "MIT",
+  "dependencies": {
+    "ask-sdk-core": "^2.8.0",
+    "ask-sdk-model": "^1.28.0"
+  }
 }

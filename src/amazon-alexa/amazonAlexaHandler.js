@@ -1,50 +1,63 @@
-'use strict';
+"use strict";
 
-const { speechContents } = require('./contents');
+const { speechContents } = require("./contents");
 
-function getHandler(handleFunction, intentNames, requestType='IntentRequest') {
-    if (!Array.isArray(intentNames)) {
-        intentNames = [intentNames];
-    }
+function getHandler(
+  handleFunction,
+  intentNames,
+  requestType = "IntentRequest"
+) {
+  if (!Array.isArray(intentNames)) {
+    intentNames = [intentNames];
+  }
 
-    const handlerObject = {
-        canHandle(handlerInput) {
-            return handlerInput.requestEnvelope.request.type === requestType
-                && (intentNames.length === 0 || intentNames.includes(handlerInput.requestEnvelope.request.intent.name));
-        },
+  const handlerObject = {
+    canHandle(handlerInput) {
+      return (
+        handlerInput.requestEnvelope.request.type === requestType &&
+        (intentNames.length === 0 ||
+          intentNames.includes(
+            handlerInput.requestEnvelope.request.intent.name
+          ))
+      );
+    },
 
-        handle(handlerInput) {
-            const slots = handlerInput.requestEnvelope.request.intent ? handlerInput.requestEnvelope.request.intent.slots : undefined;
-            const parameters = {
-                semester: slots && slots.semester && slots.semester.resolutions.resolutionsPerAuthority[0].values
-                    ? slots.semester.resolutions.resolutionsPerAuthority[0].values[0].value.id
-                    : undefined,
-                year: slots && slots.year ? slots.year.value : undefined,
-            };
+    handle(handlerInput) {
+      const slots = handlerInput.requestEnvelope.request.intent
+        ? handlerInput.requestEnvelope.request.intent.slots
+        : undefined;
+      const parameters = {
+        semester:
+          slots &&
+          slots.semester &&
+          slots.semester.resolutions.resolutionsPerAuthority[0].values
+            ? slots.semester.resolutions.resolutionsPerAuthority[0].values[0]
+                .value.id
+            : undefined,
+        year: slots && slots.year ? slots.year.value : undefined,
+      };
 
-            const response = handleFunction(parameters);
+      const response = handleFunction(parameters);
 
-            let responseBuilder = handlerInput.responseBuilder
-                .speak(response.speechText)
-                .reprompt(speechContents['REPROMPT']());
+      let responseBuilder = handlerInput.responseBuilder
+        .speak(response.speechText)
+        .reprompt(speechContents["REPROMPT"]());
 
-            if (response.visualContent) {
-                responseBuilder = responseBuilder
-                    .withStandardCard(
-                        response.visualContent.title,
-                        response.visualContent.text,
-                        response.visualContent.imageUrl,
-                    );
-            }
+      if (response.visualContent) {
+        responseBuilder = responseBuilder.withStandardCard(
+          response.visualContent.title,
+          response.visualContent.text,
+          response.visualContent.imageUrl
+        );
+      }
 
-            return responseBuilder
-                .getResponse();
-        },
-    }
+      return responseBuilder.getResponse();
+    },
+  };
 
-    return handlerObject;
+  return handlerObject;
 }
 
 module.exports = {
-    getHandler,
+  getHandler,
 };
