@@ -1,13 +1,23 @@
 const data = {
   concerts: [
     {
-      year: 2020,
-      semester: "winter",
-      dates: [],
+      year: 2022,
+      semester: "summer",
+      dates: ["2022-07-21", "2022-07-24"],
       time: "20:00",
-      prices: undefined,
-      title: "Jazznuts - The Show must go on",
-      imageUrl: undefined,
+      prices: {
+        advance: {
+          reduced: 4.0,
+          regular: 8.0,
+        },
+        boxOffice: {
+          reduced: 5.0,
+          regular: 9.0,
+        },
+      },
+      title: "Jazznuts - The Show Must Go On!",
+      imageUrl:
+        "https://storage.googleapis.com/meine-jazznuts-images-62874/posters/2022_SS_The_Show_Must_Go_On.jpg",
       location: "Audimax Regensburg",
       songs: [],
     },
