@@ -3,8 +3,7 @@ const data = {
     {
       year: 2022,
       semester: "summer",
-      dates: ["2022-07-21", "2022-07-24"],
-      time: "20:00",
+      dates: ["2022-07-21 20:00", "2022-07-24 17:00"],
       prices: {
         advance: {
           reduced: 4.0,
@@ -24,8 +23,7 @@ const data = {
     {
       year: 2019,
       semester: "winter",
-      dates: ["2020-01-16", "2020-01-17"],
-      time: "20:00",
+      dates: ["2020-01-16 20:00", "2020-01-17 20:00"],
       prices: {
         advance: {
           reduced: 4.0,
@@ -45,12 +43,10 @@ const data = {
         "Somebody to Love",
         "Mädchen",
         "Sweet Home Alabama",
-        ,
         "Alkohol",
         "Ring of Fire",
         "Mein kleiner grüner Kaktus",
         "Zieh die Schuh aus",
-        ,
         "Wake Me Up",
         "Augenbling",
         "It’s My Life",
@@ -62,8 +58,7 @@ const data = {
     {
       year: 2019,
       semester: "summer",
-      dates: ["2019-07-18", "2019-07-20"],
-      time: "20:00",
+      dates: ["2019-07-18 20:00", "2019-07-20 20:00"],
       prices: {
         advance: {
           reduced: 4.0,
@@ -97,8 +92,7 @@ const data = {
     {
       year: 2018,
       semester: "winter",
-      dates: ["2019-01-31", "2019-02-01"],
-      time: "20:00",
+      dates: ["2019-01-31 20:00", "2019-02-01 20:00"],
       prices: {
         advance: {
           reduced: 4.0,
@@ -109,7 +103,7 @@ const data = {
           regular: 8.0,
         },
       },
-      title: "Jazznuts About time",
+      title: "Jazznuts - About time",
       imageUrl:
         "https://storage.googleapis.com/meine-jazznuts-images-62874/posters/2018_WS_About_Time.jpg",
       location: "Audimax Regensburg",
@@ -134,8 +128,7 @@ const data = {
     {
       year: 2018,
       semester: "summer",
-      dates: ["2018-06-28", "2018-06-30"],
-      time: "20:00",
+      dates: ["2018-06-28 20:00", "2018-06-30 20:00"],
       title: "Jazznuts - Rockappella",
       imageUrl:
         "https://storage.googleapis.com/meine-jazznuts-images-62874/posters/2018_SS_Rockappella.jpg",
@@ -160,8 +153,7 @@ const data = {
     {
       year: 2017,
       semester: "winter",
-      dates: ["2018-01-11", "2018-01-13"],
-      time: "20:00",
+      dates: ["2018-01-11 20:00", "2018-01-13 20:00"],
       title: "Jazznuts im Wunderland",
       imageUrl:
         "https://storage.googleapis.com/meine-jazznuts-images-62874/posters/2017_WS_Jazznuts_im_Wunderland.jpg",
@@ -186,8 +178,7 @@ const data = {
     {
       year: 2017,
       semester: "summer",
-      dates: ["2017-07-03", "2017-07-05"],
-      time: "20:00",
+      dates: ["2017-07-03 20:00", "2017-07-05 20:00"],
       title: "Jazznuts - Sing'n'Swim",
       imageUrl:
         "https://storage.googleapis.com/meine-jazznuts-images-62874/posters/2017_SS_Sing_n_Swim.jpg",
@@ -213,8 +204,7 @@ const data = {
     {
       year: 2016,
       semester: "winter",
-      dates: ["2017-01-12", "2017-01-13"],
-      time: "20:00",
+      dates: ["2017-01-12 20:00", "2017-01-13 20:00"],
       title: "Jazznuts outta space",
       imageUrl:
         "https://storage.googleapis.com/meine-jazznuts-images-62874/posters/2016_WS_Jazznuts_Outta_Space.jpg",
@@ -239,8 +229,7 @@ const data = {
     {
       year: 2016,
       semester: "summer",
-      dates: ["2016-06-20", "2016-06-23"],
-      time: "20:00",
+      dates: ["2016-06-20 20:00", "2016-06-23 20:00"],
       title: "Dschungelfieber",
       imageUrl:
         "https://storage.googleapis.com/meine-jazznuts-images-62874/posters/2016_SS_Dschungelfieber.jpg",
@@ -268,8 +257,7 @@ const data = {
     {
       year: 2015,
       semester: "winter",
-      dates: ["2015-12-17", "2015-12-18"],
-      time: "20:00",
+      dates: ["2015-12-17 20:00", "2015-12-18 20:00"],
       title: "Jazznuts - Das Grusical",
       imageUrl:
         "https://storage.googleapis.com/meine-jazznuts-images-62874/posters/2015_WS_Das_Grusical.jpg",

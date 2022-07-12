@@ -5,11 +5,11 @@ function listToText(list, conjunction = "und") {
   if (!list || list.length === 0) {
     return "";
   } else if (list.length === 1) {
-    return list[0].replace(/[^\w\säöüß,-]/gi, "");
+    return list[0].replace(/[^\w\säöüß,-:]/gi, "");
   } else {
     return `${list.slice(0, list.length - 1).join(", ")} ${conjunction} ${
       list.slice(-1)[0]
-    }`.replace(/[^\w\säöüß,-]/gi, "");
+    }`.replace(/[^\w\säöüß,-:]/gi, "");
   }
 }
 
@@ -47,7 +47,7 @@ function getNextConcert() {
   const latestConcert = getOrderedConcertsList()[0];
   const now = new Date();
   const latestConcertLastDate = new Date(
-    `${latestConcert.dates.slice(-1)[0]}T${latestConcert.time}:00+02:00`
+    `${latestConcert.dates.slice(-1)[0]}:00+02:00`
   );
   if (now < latestConcertLastDate) {
     return latestConcert;
@@ -69,7 +69,7 @@ function getPastConcerts() {
   return getConcerts()
     .filter((concert) => {
       const concertLastDate = new Date(
-        `${concert.dates.slice(-1)[0]}T${concert.time}:00+02:00`
+        `${concert.dates.slice(-1)[0]}:00+02:00`
       );
       return now > concertLastDate;
     })
@@ -133,7 +133,7 @@ function getConcertDaysText(concert) {
         (date) =>
           `${getWeekdayText(date)}, den ${date.getDate()}. ${getMonthText(
             date
-          )}`
+          )} um ${date.toTimeString().slice(0, 5)} Uhr`
       ),
     "und am"
   );
@@ -144,14 +144,16 @@ function getConcertDaysVisual(concert) {
     .map((dateString) => new Date(dateString))
     .map(
       (date) =>
-        `${getWeekdayText(date)}, ${date.getDate()}. ${getMonthText(date)}`
+        `${getWeekdayText(date)}, ${date.getDate()}. ${getMonthText(
+          date
+        )}, ${date.toTimeString().slice(0, 5)} Uhr`
     )
     .join(" und ");
 }
 
-function timeDifferenceToText(dateString, timeString) {
+function timeDifferenceToText(dateString) {
   const now = new Date();
-  const date = new Date(`${dateString}T${timeString}:00+02:00`);
+  const date = new Date(`${dateString}:00+02:00`);
   let deltaMinutes = (date.getTime() - now.getTime()) / (1000 * 60);
 
   const deltaDays = Math.floor(deltaMinutes / (60 * 24));
