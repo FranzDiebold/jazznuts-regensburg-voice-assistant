@@ -19,7 +19,7 @@ const speechContents = {
       ? `Der Titel ist <break strength="medium"/> <prosody volume="loud">${nextConcert.title}</prosody>.`
       : "Der Titel steht leider noch nicht fest.";
     return [
-      `Unsere nächsten Konzerte finden am ${dates} jeweils um <say-as interpret-as="time">${nextConcert.time}</say-as> im ${nextConcert.location} statt.`,
+      `Unsere nächsten Konzerte finden am ${dates} im ${nextConcert.location} statt.`,
       title,
     ].join(" ");
   },
@@ -30,7 +30,7 @@ const speechContents = {
       : "Der Titel unserer nächsten Konzerte steht leider noch nicht fest. Wir wissen allerdings schon wann sie stattfinden.";
     return [
       title,
-      `Sie finden am ${dates} jeweils um <say-as interpret-as="time">${nextConcert.time}</say-as> im ${nextConcert.location} statt.`,
+      `Sie finden am ${dates} im ${nextConcert.location} statt.`,
     ].join(" ");
   },
   NEXT_CONCERT_LOCATION: (nextConcert) => {
@@ -39,7 +39,7 @@ const speechContents = {
       ? `Der Titel ist <break strength="medium"/> <prosody volume="loud">${nextConcert.title}</prosody>.`
       : "Der Titel steht leider noch nicht fest.";
     return [
-      `Unsere nächsten Konzerte finden im ${nextConcert.location} statt, und zwar am ${dates} jeweils um <say-as interpret-as="time">${nextConcert.time}</say-as>.`,
+      `Unsere nächsten Konzerte finden im ${nextConcert.location} statt, und zwar am ${dates}.`,
       title,
     ].join(" ");
   },
@@ -86,7 +86,7 @@ const speechContents = {
     return `Die Konzerttitel in den vergangenen Semestern waren: ${semesterYearConcertTitleList}.`;
   },
   RESERVATION_INFO: () =>
-    'Karten kannst du auf www.jazznuts.de reservieren. Reservierte Karten müssen bis spätestens <say-as interpret-as="time">19:30</say-as> am Konzerttag abgeholt werden.',
+    "Karten kannst du auf www.jazznuts.de reservieren. Reservierte Karten müssen bis spätestens 30 Minuten vor Konzertbeginn abgeholt werden.",
   BUY_TICKETS_INFO: () =>
     'Karten im Vorverkauf gibt es in der Mensa der Uni und <say-as interpret-as="characters">OTH</say-as> Regensburg sowie an der Tourist-Info.',
   REDUCED_PRICE_INFO: () =>

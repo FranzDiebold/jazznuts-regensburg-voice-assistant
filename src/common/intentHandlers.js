@@ -87,10 +87,7 @@ function handleTimeUntilNextConcertIntent() {
   if (!nextConcert) {
     speechText = speechContents["NO_INFORMATION_FOR_NEXT_CONCERT_YET"]();
   } else {
-    const timeUntilNextConcert = timeDifferenceToText(
-      nextConcert.dates[0],
-      nextConcert.time
-    );
+    const timeUntilNextConcert = timeDifferenceToText(nextConcert.dates[0]);
     speechText =
       speechContents["TIME_UNTIL_NEXT_CONCERT"](timeUntilNextConcert);
     visualContent = visualContent = visualContents["CONCERT"](nextConcert);
