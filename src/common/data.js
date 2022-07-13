@@ -18,7 +18,21 @@ const data = {
       imageUrl:
         "https://storage.googleapis.com/meine-jazznuts-images-62874/posters/2022_SS_The_Show_Must_Go_On.jpg",
       location: "Audimax Regensburg",
-      songs: [],
+      songs: [
+        "This is me",
+        "Run to you",
+        "Set fire to the rain",
+        "Ba-Ba-Banküberfall",
+        "Wie kann es sein",
+        "Bring me to life",
+        "Zusammen",
+        "Mambo",
+        "Africa",
+        "Hysteria",
+        "The show must go on",
+        "Baba yetu",
+        "Flashlight",
+      ],
     },
     {
       year: 2019,
