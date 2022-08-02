@@ -2,6 +2,16 @@ const data = {
   concerts: [
     {
       year: 2022,
+      semester: "winter",
+      dates: ["2023-02-02 19:00", "2023-02-04 20:00"],
+      prices: undefined,
+      title: undefined,
+      imageUrl: undefined,
+      location: "Audimax Regensburg",
+      songs: undefined,
+    },
+    {
+      year: 2022,
       semester: "summer",
       dates: ["2022-07-21 20:00", "2022-07-24 17:00"],
       prices: {
