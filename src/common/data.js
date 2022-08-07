@@ -3,7 +3,7 @@ const data = {
     {
       year: 2022,
       semester: "winter",
-      dates: ["2023-02-02 19:00", "2023-02-04 20:00"],
+      dates: ["2023-02-02 20:00", "2023-02-04 20:00"],
       prices: undefined,
       title: undefined,
       imageUrl: undefined,
