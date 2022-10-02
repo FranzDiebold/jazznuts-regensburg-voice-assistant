@@ -5,7 +5,7 @@ const data = {
       semester: "winter",
       dates: ["2023-02-02 20:00", "2023-02-04 20:00"],
       prices: undefined,
-      title: undefined,
+      title: "Jazznuts - Das Mystical",
       imageUrl: undefined,
       location: "Audimax Regensburg",
       songs: undefined,
