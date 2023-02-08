@@ -4,11 +4,34 @@ const data = {
       year: 2022,
       semester: "winter",
       dates: ["2023-02-02 20:00", "2023-02-04 20:00"],
-      prices: undefined,
+      prices: {
+        advance: {
+          reduced: 4.0,
+          regular: 8.0,
+        },
+        boxOffice: {
+          reduced: 5.0,
+          regular: 10.0,
+        },
+      },
       title: "Jazznuts - Das Mystical",
-      imageUrl: undefined,
+      imageUrl:
+        "https://storage.googleapis.com/meine-jazznuts-images-62874/posters/2022_WS_Das_Mystical.jpg",
       location: "Audimax Regensburg",
-      songs: undefined,
+      songs: [
+        "Smells like teen spirit",
+        "Sweet dreams",
+        "Chasing cars",
+        "Engel",
+        "Caresse sur l'océan",
+        "Tage wie diese",
+        "And so it goes",
+        "Bicycle race",
+        "Save the World / Don’t You Worry Child",
+        "Nellie the elephant",
+        "Dancing queen",
+        "Hard rock hallelujah"
+      ],
     },
     {
       year: 2022,
