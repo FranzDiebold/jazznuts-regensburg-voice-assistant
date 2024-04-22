@@ -1,14 +1,80 @@
 const data = {
   concerts: [
     {
-      year: 2023,
+      year: 2024,
       semester: "summer",
-      dates: ["2023-07-20 20:00", "2023-07-21 20:00"],
+      dates: ["2024-07-18 20:00", "2024-07-19 20:00"],
       prices: undefined,
       title: undefined,
       imageUrl: undefined,
       location: "Audimax Regensburg",
       songs: undefined,
+    },
+    {
+      year: 2023,
+      semester: "winter",
+      dates: ["2024-02-09 20:15", "2024-02-10 20:15"],
+      prices: {
+        advance: {
+          reduced: 5.0,
+          regular: 10.0,
+        },
+        boxOffice: {
+          reduced: 7.0,
+          regular: 12.0,
+        },
+      },
+      title: "Jazznuts - A caBella Italia",
+      imageUrl:
+        "https://storage.googleapis.com/meine-jazznuts-images-62874/posters/2023_WS_A_caBella_Italia.jpg",
+      location: "Audimax Regensburg",
+      songs: [
+        "Radio",
+        "I knew you were trouble",
+        "Laura non c’è",
+        "My songs know what you did in the dark (Light em up)",
+        "Übern See",
+        "Beggin’",
+        "Mamma mia!",
+        "Poison",
+        "Azzurro",
+        "This is me",
+        "Shallow",
+        "September",
+      ],
+    },
+    {
+      year: 2023,
+      semester: "summer",
+      dates: ["2023-07-20 20:00", "2023-07-21 20:00"],
+      prices: {
+        advance: {
+          reduced: 4.0,
+          regular: 8.0,
+        },
+        boxOffice: {
+          reduced: 5.0,
+          regular: 10.0,
+        },
+      },
+      title: "Jazznuts - Crime Time",
+      imageUrl:
+        "https://storage.googleapis.com/meine-jazznuts-images-62874/posters/2023_SS_Crime_Time.jpg",
+      location: "Audimax Regensburg",
+      songs: [
+        "Welcome to the black parade",
+        "I don’t want to miss a thing",
+        "Coro dei pompieri",
+        "The scientist",
+        "Make you feel my love",
+        "Haus am See",
+        "Chandelier",
+        "I want it that way",
+        "Lullabye (Goodnight, my angel)",
+        "Bohemian rhapsody",
+        "Man in the mirror",
+        "Just sing it!",
+      ],
     },
     {
       year: 2022,
@@ -40,7 +106,7 @@ const data = {
         "Save the World / Don’t You Worry Child",
         "Nellie the elephant",
         "Dancing queen",
-        "Hard rock hallelujah"
+        "Hard rock hallelujah",
       ],
     },
     {
