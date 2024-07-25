@@ -4,11 +4,33 @@ const data = {
       year: 2024,
       semester: "summer",
       dates: ["2024-07-18 20:00", "2024-07-19 20:00"],
-      prices: undefined,
-      title: undefined,
+      prices: {
+        advance: {
+          reduced: 5.0,
+          regular: 10.0,
+        },
+        boxOffice: {
+          reduced: 7.0,
+          regular: 12.0,
+        },
+      },
+      title: "Jazznuts - Olympi-A-cappella",
       imageUrl: undefined,
       location: "Audimax Regensburg",
-      songs: undefined,
+      songs: [
+        "Paradise",
+        "One moment in time",
+        "Never gonna give you up",
+        "We are the champions",
+        "Run to you",
+        "Hysteria",
+        "Everglow",
+        "Radioactive",
+        "Shots",
+        "Happy together",
+        "You are the reason",
+        "My way",
+      ],
     },
     {
       year: 2023,
@@ -25,8 +47,7 @@ const data = {
         },
       },
       title: "Jazznuts - A caBella Italia",
-      imageUrl:
-        "https://storage.googleapis.com/meine-jazznuts-images-62874/posters/2023_WS_A_caBella_Italia.jpg",
+      imageUrl: "/posters/2023_WS_A_caBella_Italia.jpg",
       location: "Audimax Regensburg",
       songs: [
         "Radio",
@@ -58,8 +79,7 @@ const data = {
         },
       },
       title: "Jazznuts - Crime Time",
-      imageUrl:
-        "https://storage.googleapis.com/meine-jazznuts-images-62874/posters/2023_SS_Crime_Time.jpg",
+      imageUrl: "/posters/2023_SS_Crime_Time.jpg",
       location: "Audimax Regensburg",
       songs: [
         "Welcome to the black parade",
@@ -91,8 +111,7 @@ const data = {
         },
       },
       title: "Jazznuts - Das Mystical",
-      imageUrl:
-        "https://storage.googleapis.com/meine-jazznuts-images-62874/posters/2022_WS_Das_Mystical.jpg",
+      imageUrl: "/posters/2022_WS_Das_Mystical.jpg",
       location: "Audimax Regensburg",
       songs: [
         "Smells like teen spirit",
@@ -124,8 +143,7 @@ const data = {
         },
       },
       title: "Jazznuts - The Show Must Go On!",
-      imageUrl:
-        "https://storage.googleapis.com/meine-jazznuts-images-62874/posters/2022_SS_The_Show_Must_Go_On.jpg",
+      imageUrl: "/posters/2022_SS_The_Show_Must_Go_On.jpg",
       location: "Audimax Regensburg",
       songs: [
         "This is me",
@@ -158,8 +176,7 @@ const data = {
         },
       },
       title: "Jazznuts - Go West",
-      imageUrl:
-        "https://storage.googleapis.com/meine-jazznuts-images-62874/posters/2019_SS_Go_West.jpg",
+      imageUrl: "/posters/2019_SS_Go_West.jpg",
       location: "Audimax Regensburg",
       songs: [
         "Boondocks",
@@ -193,8 +210,7 @@ const data = {
         },
       },
       title: "Jazznuts - Simsalasing",
-      imageUrl:
-        "https://storage.googleapis.com/meine-jazznuts-images-62874/posters/2019_SS_Simsalasing.jpg",
+      imageUrl: "/posters/2019_SS_Simsalasing.jpg",
       location: "Audimax Regensburg",
       songs: [
         "Adventure of a lifetime",
@@ -227,8 +243,7 @@ const data = {
         },
       },
       title: "Jazznuts - About time",
-      imageUrl:
-        "https://storage.googleapis.com/meine-jazznuts-images-62874/posters/2018_WS_About_Time.jpg",
+      imageUrl: "/posters/2018_WS_About_Time.jpg",
       location: "Audimax Regensburg",
       songs: [
         "Dancing Queen",
@@ -253,8 +268,7 @@ const data = {
       semester: "summer",
       dates: ["2018-06-28 20:00", "2018-06-30 20:00"],
       title: "Jazznuts - Rockappella",
-      imageUrl:
-        "https://storage.googleapis.com/meine-jazznuts-images-62874/posters/2018_SS_Rockappella.jpg",
+      imageUrl: "/posters/2018_SS_Rockappella.jpg",
       location: "Audimax Regensburg",
       songs: [
         "Alkohol",
@@ -278,8 +292,7 @@ const data = {
       semester: "winter",
       dates: ["2018-01-11 20:00", "2018-01-13 20:00"],
       title: "Jazznuts im Wunderland",
-      imageUrl:
-        "https://storage.googleapis.com/meine-jazznuts-images-62874/posters/2017_WS_Jazznuts_im_Wunderland.jpg",
+      imageUrl: "/posters/2017_WS_Jazznuts_im_Wunderland.jpg",
       location: "Audimax Regensburg",
       songs: [
         "Let me entertain you",
@@ -303,8 +316,7 @@ const data = {
       semester: "summer",
       dates: ["2017-07-03 20:00", "2017-07-05 20:00"],
       title: "Jazznuts - Sing'n'Swim",
-      imageUrl:
-        "https://storage.googleapis.com/meine-jazznuts-images-62874/posters/2017_SS_Sing_n_Swim.jpg",
+      imageUrl: "/posters/2017_SS_Sing_n_Swim.jpg",
       location: "Audimax Regensburg",
       songs: [
         "Another Day of Sun",
@@ -329,8 +341,7 @@ const data = {
       semester: "winter",
       dates: ["2017-01-12 20:00", "2017-01-13 20:00"],
       title: "Jazznuts outta space",
-      imageUrl:
-        "https://storage.googleapis.com/meine-jazznuts-images-62874/posters/2016_WS_Jazznuts_Outta_Space.jpg",
+      imageUrl: "/posters/2016_WS_Jazznuts_Outta_Space.jpg",
       location: "Audimax Regensburg",
       songs: [
         "Earth Song",
@@ -354,8 +365,7 @@ const data = {
       semester: "summer",
       dates: ["2016-06-20 20:00", "2016-06-23 20:00"],
       title: "Dschungelfieber",
-      imageUrl:
-        "https://storage.googleapis.com/meine-jazznuts-images-62874/posters/2016_SS_Dschungelfieber.jpg",
+      imageUrl: "/posters/2016_SS_Dschungelfieber.jpg",
       location: "Audimax Regensburg",
       songs: [
         "Bohemian Rhapsody",
@@ -382,8 +392,7 @@ const data = {
       semester: "winter",
       dates: ["2015-12-17 20:00", "2015-12-18 20:00"],
       title: "Jazznuts - Das Grusical",
-      imageUrl:
-        "https://storage.googleapis.com/meine-jazznuts-images-62874/posters/2015_WS_Das_Grusical.jpg",
+      imageUrl: "/posters/2015_WS_Das_Grusical.jpg",
       location: "H24 Uni Regensburg",
       songs: [
         "Thriller",
@@ -408,8 +417,7 @@ const data = {
   general: {
     images: {
       logo: "https://stwno.de/images/Kultur/gallery/reg-jazznuts/4-jazznuts-logo.jpg",
-      choir:
-        "https://storage.googleapis.com/meine-jazznuts-images-62874/Jazznuts_choir.jpg",
+      choir: "/Jazznuts_choir.jpg",
     },
     online: {
       website: {
