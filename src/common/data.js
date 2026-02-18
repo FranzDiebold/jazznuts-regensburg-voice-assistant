@@ -1,11 +1,41 @@
 const data = {
   concerts: [
     {
+      year: 2026,
+      semester: "summer",
+      dates: ["2026-07-16 20:00", "2026-07-18 20:00"],
+      prices: undefined,
+      title: undefined,
+      imageUrl: undefined,
+      location: "Audimax Regensburg",
+      songs: undefined,
+    },
+    {
+      year: 2025,
+      semester: "winter",
+      dates: ["2026-02-05 20:00", "2026-02-07 20:00"],
+      prices: undefined,
+      title: "30 Jahre Jazznuts - Von Jazz zu Nuts",
+      imageUrl: undefined,
+      location: "Audimax Regensburg",
+      songs: undefined,
+    },
+    {
+      year: 2025,
+      semester: "summer",
+      dates: ["2025-07-24 20:00", "2025-07-26 20:00"],
+      prices: undefined,
+      title: "Ritterklang & Minnesang",
+      imageUrl: undefined,
+      location: "Audimax Regensburg",
+      songs: undefined,
+    },
+    {
       year: 2024,
       semester: "winter",
       dates: ["2025-01-30 20:00", "2025-02-01 20:00"],
       prices: undefined,
-      title: undefined,
+      title: "Jagd nach dem verlorenen Ton",
       imageUrl: undefined,
       location: "Audimax Regensburg",
       songs: undefined,
@@ -24,7 +54,7 @@ const data = {
           regular: 12.0,
         },
       },
-      title: "Jazznuts - Olympi-A-cappella",
+      title: "Olympi-A-cappella",
       imageUrl: undefined,
       location: "Audimax Regensburg",
       songs: [
@@ -56,7 +86,7 @@ const data = {
           regular: 12.0,
         },
       },
-      title: "Jazznuts - A caBella Italia",
+      title: "A caBella Italia",
       imageUrl: "/posters/2023_WS_A_caBella_Italia.jpg",
       location: "Audimax Regensburg",
       songs: [
@@ -88,7 +118,7 @@ const data = {
           regular: 10.0,
         },
       },
-      title: "Jazznuts - Crime Time",
+      title: "Crime Time",
       imageUrl: "/posters/2023_SS_Crime_Time.jpg",
       location: "Audimax Regensburg",
       songs: [
@@ -120,7 +150,7 @@ const data = {
           regular: 10.0,
         },
       },
-      title: "Jazznuts - Das Mystical",
+      title: "Das Mystical",
       imageUrl: "/posters/2022_WS_Das_Mystical.jpg",
       location: "Audimax Regensburg",
       songs: [
@@ -152,7 +182,7 @@ const data = {
           regular: 9.0,
         },
       },
-      title: "Jazznuts - The Show Must Go On!",
+      title: "The Show Must Go On!",
       imageUrl: "/posters/2022_SS_The_Show_Must_Go_On.jpg",
       location: "Audimax Regensburg",
       songs: [
@@ -185,7 +215,7 @@ const data = {
           regular: 9.0,
         },
       },
-      title: "Jazznuts - Go West",
+      title: "Go West",
       imageUrl: "/posters/2019_SS_Go_West.jpg",
       location: "Audimax Regensburg",
       songs: [
@@ -219,7 +249,7 @@ const data = {
           regular: 9.0,
         },
       },
-      title: "Jazznuts - Simsalasing",
+      title: "Simsalasing",
       imageUrl: "/posters/2019_SS_Simsalasing.jpg",
       location: "Audimax Regensburg",
       songs: [
@@ -252,7 +282,7 @@ const data = {
           regular: 8.0,
         },
       },
-      title: "Jazznuts - About time",
+      title: "About time",
       imageUrl: "/posters/2018_WS_About_Time.jpg",
       location: "Audimax Regensburg",
       songs: [
@@ -277,7 +307,7 @@ const data = {
       year: 2018,
       semester: "summer",
       dates: ["2018-06-28 20:00", "2018-06-30 20:00"],
-      title: "Jazznuts - Rockappella",
+      title: "Rockappella",
       imageUrl: "/posters/2018_SS_Rockappella.jpg",
       location: "Audimax Regensburg",
       songs: [
@@ -325,7 +355,7 @@ const data = {
       year: 2017,
       semester: "summer",
       dates: ["2017-07-03 20:00", "2017-07-05 20:00"],
-      title: "Jazznuts - Sing'n'Swim",
+      title: "Sing'n'Swim",
       imageUrl: "/posters/2017_SS_Sing_n_Swim.jpg",
       location: "Audimax Regensburg",
       songs: [
@@ -401,7 +431,7 @@ const data = {
       year: 2015,
       semester: "winter",
       dates: ["2015-12-17 20:00", "2015-12-18 20:00"],
-      title: "Jazznuts - Das Grusical",
+      title: "Das Grusical",
       imageUrl: "/posters/2015_WS_Das_Grusical.jpg",
       location: "H24 Uni Regensburg",
       songs: [
